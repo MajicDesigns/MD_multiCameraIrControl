@@ -1,0 +1,13 @@
+Nikon	KEYWORD1
+Canon	KEYWORD1
+CanonWLDC100	KEYWORD1
+Pentax	KEYWORD1
+Olympus	KEYWORD1
+Minolta	KEYWORD1
+Sony	KEYWORD1
+zoomin	KEYWORD2
+zoomout	KEYWORD2
+shutterNow	KEYWORD2
+shutterDelayed	KEYWORD2
+toogleFocus KEYWORD2
+toogleVideo KEYWORD2
