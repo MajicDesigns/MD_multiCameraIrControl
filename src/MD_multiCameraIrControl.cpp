@@ -38,16 +38,16 @@ void cCamera::high(uint32_t time)
   while (micros() - start <= time)
   {
     digitalWrite(_pin, HIGH);
-    wait(pause);
+    delayMicroseconds(pause);
     digitalWrite(_pin, LOW);
-    wait(pause);
+    delayMicroseconds(pause);
   }
 }
 
 inline void cCamera::signal(uint32_t timeH, uint32_t timeW)
 {
   high(timeH);
-  wait(timeW);
+  delayMicroseconds(timeW);
 }
 
 // == NIKON ==

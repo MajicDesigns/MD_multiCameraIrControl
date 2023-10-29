@@ -33,6 +33,7 @@
  *                                - added signal() to consolidate high()/wait() sequence
  *                                - checked all IR signals output on Arduino Uno against original lib 
  *                                  output using AnalysIR; modified timing delays to match original output.
+ *              2023-10-29 V2.1.0 - Fixed reported timing issues using wait() in high() and signal() instead of delayMicroseconds()
  *
  ********************************************/
 #pragma once
@@ -61,7 +62,6 @@ class cCamera
     uint8_t _freq;  // in kHz (eg, 33, 38, 40)
 
     void high(uint32_t time);      // modulated IR output at _freq
-    void wait(uint32_t time);      // long microseconds wait
     void signal(uint32_t timeH, uint32_t timeW);  // wrapper for a high() followed by wait()
     
   private:
